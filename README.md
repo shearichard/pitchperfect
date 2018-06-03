@@ -1,4 +1,10 @@
 # README
+## Invoking Lilypond
+Using an input file testbig.ly .
+```
+/home/rshea/bin/lilypond -dbackend=svg testbig.ly
+```
+
 ## Using twisted as the server 
 The basis for this is the following blog post : https://blog.anvileight.com/posts/simple-python-http-server/
 
