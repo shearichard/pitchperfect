@@ -3,14 +3,40 @@
 <head>
     <title>My first web page</title>
     <!-- This is a comment, by the way -->
+    <style>
+        div#firstsvg
+        {
+            background-color:pink;
+            width:100%
+        }
+    </style>
 </head>
 <body>
     <h1>Test of SVG rendering</h1>
     <h2>Musical Staff</h2>
+    <h3>A</h3>
+    <div id="firstsvg">
+    <object type="image/svg+xml" data="testscrubbedalternate0.svg">
+        <p class="warning">
+            Your browser does not support SVG!
+        </p>
+    </object>
+    </div>
+    <h3>B</h3>
+    <div id="secondsvg">
     <object type="image/svg+xml" data="test.svg">
         <p class="warning">
             Your browser does not support SVG!
         </p>
     </object>
+    </div>
+    <h3>C</h3>
+    <div id="thirdsvg">
+    <object type="image/svg+xml" data="testbig.svg">
+        <p class="warning">
+            Your browser does not support SVG!
+        </p>
+    </object>
+    </div>
 </body>
 </html>
