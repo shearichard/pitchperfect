@@ -29,6 +29,7 @@
     >
 
     <script src="index.js"></script>
+    <script src="jquery.hotkeys/jeresig-jquery.hotkeys-05a1370/jquery.hotkeys.js"></script>
 
     <link 
         href="index.css" 
@@ -40,6 +41,7 @@
 <body>
     <div class="container">
     <h1>Pitch Perfect</h1>
+
     <br />
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn btn-secondary active">
@@ -54,10 +56,10 @@
     </div>
     <div>&nbsp;</div>
     <br />
-    <div class="card">
+    <div id="startdiv" class="card">
         <div class="card-body">
-            Press start to ... start.
-            <button type="button" class="startquestions btn btn-primary btn-lg">Start</button>
+            <h3>Press start to ... start.</h3>
+            <button type="button" class="startquestions float-left btn btn-primary btn-lg">Start</button>
         </div>
     </div>
     <br />
@@ -66,12 +68,12 @@
     <!-- Pitch c in Octave 0 -->
     <div id="octave-0-pitch-c" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-c-answertext">
                 <div>
-                   <h5 class="lead">The pitch is c.</h5> 
+                   <h3 The pitch is c.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -90,12 +92,12 @@
     <!-- Pitch d in Octave 0 -->
     <div id="octave-0-pitch-d" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-d-answertext">
                 <div>
-                   <h5 class="lead">The pitch is d.</h5> 
+                   <h3>The pitch is d.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -114,12 +116,12 @@
     <!-- Pitch e in Octave 0 -->
     <div id="octave-0-pitch-e" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-e-answertext">
                 <div>
-                   <h5 class="lead">The pitch is e.</h5> 
+                   <h3>The pitch is e.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -138,12 +140,12 @@
     <!-- Pitch f in Octave 0 -->
     <div id="octave-0-pitch-f" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-f-answertext">
                 <div>
-                   <h5 class="lead">The pitch is f.</h5> 
+                   <h3>The pitch is f.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -162,12 +164,12 @@
     <!-- Pitch g in Octave 0 -->
     <div id="octave-0-pitch-g" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-g-answertext">
                 <div>
-                   <h5 class="lead">The pitch is g.</h5> 
+                   <h3>The pitch is g.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -186,12 +188,12 @@
     <!-- Pitch a in Octave 0 -->
     <div id="octave-0-pitch-a" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-a-answertext">
                 <div>
-                   <h5 class="lead">The pitch is a.</h5> 
+                   <h3>The pitch is a.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -210,12 +212,12 @@
     <!-- Pitch b in Octave 0 -->
     <div id="octave-0-pitch-b" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-0-pitch-b-answertext">
                 <div>
-                   <h5 class="lead">The pitch is b.</h5> 
+                   <h3>The pitch is b.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -234,12 +236,12 @@
     <!-- Pitch c in Octave 1 -->
     <div id="octave-1-pitch-c" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-c-answertext">
                 <div>
-                   <h5 class="lead">The pitch is c.</h5> 
+                   <h3>The pitch is c.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -258,12 +260,12 @@
     <!-- Pitch d in Octave 1 -->
     <div id="octave-1-pitch-d" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-d-answertext">
                 <div>
-                   <h5 class="lead">The pitch is d.</h5> 
+                   <h3>The pitch is d.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -282,12 +284,12 @@
     <!-- Pitch e in Octave 1 -->
     <div id="octave-1-pitch-e" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-e-answertext">
                 <div>
-                   <h5 class="lead">The pitch is e.</h5> 
+                   <h3>The pitch is e.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -306,12 +308,12 @@
     <!-- Pitch f in Octave 1 -->
     <div id="octave-1-pitch-f" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-f-answertext">
                 <div>
-                   <h5 class="lead">The pitch is f.</h5> 
+                   <h3>The pitch is f.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -330,12 +332,12 @@
     <!-- Pitch g in Octave 1 -->
     <div id="octave-1-pitch-g" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-g-answertext">
                 <div>
-                   <h5 class="lead">The pitch is g.</h5> 
+                   <h3>The pitch is g.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -354,12 +356,12 @@
     <!-- Pitch a in Octave 1 -->
     <div id="octave-1-pitch-a" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-a-answertext">
                 <div>
-                   <h5 class="lead">The pitch is a.</h5> 
+                   <h3>The pitch is a.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->
@@ -378,12 +380,12 @@
     <!-- Pitch b in Octave 1 -->
     <div id="octave-1-pitch-b" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h4 class="card-title">What pitch is this ?</h4>
+            <h2  class="card-title">What pitch is this ?</h2>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
-            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <a href="#" class="nextpitch disabled btn btn-primary">Next</a>
             <div class="card-body answertextinvisible" id="octave-1-pitch-b-answertext">
                 <div>
-                   <h5 class="lead">The pitch is b.</h5> 
+                   <h3>The pitch is b.</h3> 
                 </div>
             </div>
             <!-- ORIGINAL START -->

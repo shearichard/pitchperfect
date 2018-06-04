@@ -8,5 +8,11 @@
   display: block;
 }
 .answertextinvisible {
+  visibility: hidden;
+}
+.startdivvisible {
+  display: block;
+}
+.startdivinvisible {
   display: none;
 }
