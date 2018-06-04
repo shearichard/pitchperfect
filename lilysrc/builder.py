@@ -4,14 +4,14 @@ HTMLFRAG = '''
     <!-- Pitch {2} in Octave {3} -->
     <div id="{0}" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
-            <h5 class="card-title">What pitch is this ?</h5>
-            <div class="card-body answertextinvisible" id="{0}-answertext">
-                <div>
-                   The pitch is {2}. 
-                </div>
-            </div>
+            <h4 class="card-title">What pitch is this ?</h4>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
             <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <div class="card-body answertextinvisible" id="{0}-answertext">
+                <div>
+                   <h5 class="lead">The pitch is {2}.</h5> 
+                </div>
+            </div>
             <!-- ORIGINAL START -->
             <div>
                 <object type="image/svg+xml" data="{1}.svg">
