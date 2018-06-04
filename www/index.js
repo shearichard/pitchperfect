@@ -30,6 +30,12 @@ TCG.LIL = function () {
       {
         $('#' + TCG.LIL.currentQuestion).removeClass( "noteattemptcardvisible" )
         $('#' + TCG.LIL.currentQuestion).addClass( "noteattemptcardinvisible" )
+        //
+        var idanswercard = _makeCurrentQuestionAnswerId();
+        $('#' + idanswercard).removeClass( "answertextvisible" )
+        $('#' + idanswercard).removeClass( "answertextinvisible" )
+        //
+        $('#' + idanswercard).addClass( "answertextinvisible" )
       }
       TCG.LIL.currentQuestion = TCG.LIL.arrdiv[_getNextQuestion()];
 
@@ -38,6 +44,15 @@ TCG.LIL = function () {
     }
     function _getNextQuestion(){
       return _getRandomInt(TCG.LIL.arrdiv.length)
+    }
+    function _tellMe(){
+      var idanswercard = _makeCurrentQuestionAnswerId();
+
+      $('#' + idanswercard).removeClass( "answertextinvisible" )
+      $('#' + idanswercard).addClass( "answertextvisible" )
+    }
+    function _makeCurrentQuestionAnswerId(){
+      return TCG.LIL.currentQuestion + '-answertext';
     }
     return {
       //PUBLIC AREA
@@ -50,6 +65,7 @@ TCG.LIL = function () {
         console.log(_getRandomInt(TCG.LIL.arrdiv.length));
         $( ".tellmepitch" ).click(function() {
           console.log( "Handler for tellmepitch .click() called." );
+          _tellMe()
         });
         $( ".nextpitch" ).click(function() {
           console.log( "Handler for nextpitch .click() called." );

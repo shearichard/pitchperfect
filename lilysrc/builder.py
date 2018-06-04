@@ -5,6 +5,11 @@ HTMLFRAG = '''
     <div id="{0}" class="card noteattemptcard noteattemptcardinvisible">
         <div class="card-body">
             <h5 class="card-title">What pitch is this ?</h5>
+            <div class="card-body answertextinvisible" id="{0}-answertext">
+                <div>
+                   The pitch is {2}. 
+                </div>
+            </div>
             <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
             <a href="#" class="nextpitch btn btn-primary">Next</a>
             <!-- ORIGINAL START -->

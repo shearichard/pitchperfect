@@ -4,3 +4,9 @@
 .noteattemptcardinvisible {
   display: none;
 }
+.answertextvisible {
+  display: block;
+}
+.answertextinvisible {
+  display: none;
+}
