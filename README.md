@@ -12,7 +12,7 @@ However for some reason the suggested command to start twisted in that blog post
 command.
 
 ```
-twistd -n -o web --path=./www/
+twistd -n -o web --path=./docs/
 ```
 This will serve on localhost:8080 .
 
