@@ -9,14 +9,14 @@ HTMLFRAG = '''
 
 '''
 for oct in ['0','1']:
-    for pitch in ['a','b','c','d','e','f','g']:
+    for pitch in ['c','d','e','f','g', 'a', 'b']:
         divid = '''octave-{0}-pitch-{1}'''.format(oct, pitch)
         n='''{0}+{1}'''.format(pitch, oct)
         command = '''/home/rshea/bin/lilypond -dbackend=svg {0}.ly;mv {0}.svg ../www'''.format(n)
         print(command)
 print("")
 for oct in ['0','1']:
-    for pitch in ['a','b','c','d','e','f','g']:
+    for pitch in ['c','d','e','f','g', 'a','b']:
         divid = '''octave-{0}-pitch-{1}'''.format(oct, pitch)
         n='''{0}+{1}'''.format(pitch, oct)
         htmlfrag = HTMLFRAG.format(divid, n)
