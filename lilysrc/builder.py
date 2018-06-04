@@ -1,14 +1,23 @@
 import pprint
 
 HTMLFRAG = '''
-    <div id="{0}">
-    <object type="image/svg+xml" data="{1}.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch {2} in Octave {3} -->
+    <div id="{0}" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="{1}.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
-
 '''
 def main():
     for oct in ['0','1']:
@@ -23,9 +32,8 @@ def main():
         for pitch in ['c','d','e','f','g', 'a','b']:
             divid = '''octave-{0}-pitch-{1}'''.format(oct, pitch)
             n='''{0}+{1}'''.format(pitch, oct)
-            htmlfrag = HTMLFRAG.format(divid, n)
+            htmlfrag = HTMLFRAG.format(divid, n, pitch, oct)
             print(htmlfrag)
-            print('''<!--- --->''')
             arrforjs.append(divid)
     print("")
     pprint.pprint(arrforjs)

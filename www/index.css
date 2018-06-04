@@ -1,0 +1,6 @@
+.noteattemptcardvisible {
+  display: block;
+}
+.noteattemptcardinvisible {
+  display: none;
+}

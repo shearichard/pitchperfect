@@ -6,151 +6,328 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous">
     </script>
+
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" 
+        crossorigin="anonymous">
+    </script>
+
+    <!--
+    <link 
+        href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" 
+        crossorigin="anonymous" 
+    >
+    -->
+    <link 
+        href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/pulse/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-w1P8UfRjdTYLTgdq8Y19zjdV25oYPMGNzwtm3tIyZ/gK8JPu+8ZW9OVkKhnBuydY" 
+        crossorigin="anonymous"
+    >
+
     <script src="index.js"></script>
 
-    <title>My first web page</title>
-    <!-- This is a comment, by the way -->
-    <style>
-        div#firstsvg
-        {
-            background-color:pink;
-            width:100%
-        }
-    </style>
+    <link 
+        href="index.css" 
+        rel="stylesheet" 
+    >
+
+    <title>Pitch Perfect</title>
 </head>
 <body>
-    <div id="irdsvg">
-    <object type="image/svg+xml" data="c+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <div class="container">
+    <h1>Pitch Perfect</h1>
+    <br />
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Beginners 
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Not Beginners 
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Expert 
+      </label>
     </div>
-
-    <div id="octave-0-pitch-a">
-    <object type="image/svg+xml" data="a+0.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <div>&nbsp;</div>
+    <br />
+    <div class="card">
+        <div class="card-body">
+            Press start to ... start.
+            <button type="button" class="startquestions btn btn-primary btn-lg">Start</button>
+        </div>
     </div>
+    <br />
 
-
-<!--- --->
-
-    <div id="octave-0-pitch-b">
-    <object type="image/svg+xml" data="b+0.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
-    </div>
-
-
-<!--- --->
-
-    <div id="octave-0-pitch-c">
-    <object type="image/svg+xml" data="c+0.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
-    </div>
-
-
-<!--- --->
-
-    <div id="octave-0-pitch-d">
-    <object type="image/svg+xml" data="d+0.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- START attempt cards -->
+    <!-- Pitch c in Octave 0 -->
+    <div id="octave-0-pitch-c" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="c+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-
-    <div id="octave-0-pitch-e">
-    <object type="image/svg+xml" data="e+0.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch d in Octave 0 -->
+    <div id="octave-0-pitch-d" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="d+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-<!--- --->
-
-    <div id="octave-1-pitch-b">
-    <object type="image/svg+xml" data="b+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch e in Octave 0 -->
+    <div id="octave-0-pitch-e" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="e+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-
-    <div id="octave-1-pitch-c">
-    <object type="image/svg+xml" data="c+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch f in Octave 0 -->
+    <div id="octave-0-pitch-f" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="f+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-
-    <div id="octave-1-pitch-d">
-    <object type="image/svg+xml" data="d+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch g in Octave 0 -->
+    <div id="octave-0-pitch-g" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="g+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-
-    <div id="octave-1-pitch-e">
-    <object type="image/svg+xml" data="e+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch a in Octave 0 -->
+    <div id="octave-0-pitch-a" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="a+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-
-    <div id="octave-1-pitch-f">
-    <object type="image/svg+xml" data="f+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch b in Octave 0 -->
+    <div id="octave-0-pitch-b" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="b+0.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
-<!--- --->
-
-    <div id="octave-1-pitch-g">
-    <object type="image/svg+xml" data="g+1.svg">
-        <p class="warning">
-            Your browser does not support SVG!
-        </p>
-    </object>
+    <!-- Pitch c in Octave 1 -->
+    <div id="octave-1-pitch-c" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="c+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
     </div>
 
 
+    <!-- Pitch d in Octave 1 -->
+    <div id="octave-1-pitch-d" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="d+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
+    </div>
 
 
+    <!-- Pitch e in Octave 1 -->
+    <div id="octave-1-pitch-e" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="e+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
+    </div>
 
 
+    <!-- Pitch f in Octave 1 -->
+    <div id="octave-1-pitch-f" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="f+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
+    </div>
 
+
+    <!-- Pitch g in Octave 1 -->
+    <div id="octave-1-pitch-g" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="g+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
+    </div>
+
+
+    <!-- Pitch a in Octave 1 -->
+    <div id="octave-1-pitch-a" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="a+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
+    </div>
+
+
+    <!-- Pitch b in Octave 1 -->
+    <div id="octave-1-pitch-b" class="card noteattemptcard noteattemptcardinvisible">
+        <div class="card-body">
+            <h5 class="card-title">What pitch is this ?</h5>
+            <a href="#" class="tellmepitch btn btn-primary">Tell Me</a>
+            <a href="#" class="nextpitch btn btn-primary">Next</a>
+            <!-- ORIGINAL START -->
+            <div>
+                <object type="image/svg+xml" data="b+1.svg">
+                    <p class="warning">
+                        Your browser does not support SVG!
+                    </p>
+                </object>
+            </div>
+            <!-- ORIGINAL STOP -->
+        </div>
+    </div>
+    <!-- STOP attempt cards -->
+</div>
 </body>
 </html>
