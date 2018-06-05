@@ -41,6 +41,9 @@ TCG.LIL = function () {
         $('#' + idanswercard).removeClass( "answertextvisible" )
         $('#' + idanswercard).removeClass( "answertextinvisible" )
         $('#' + idanswercard).addClass( "answertextinvisible" )
+        //Put buttons back to default state
+        $('#' + TCG.LIL.currentQuestion).find('.tellmepitch').removeClass( "disabled" )
+        $('#' + TCG.LIL.currentQuestion).find('.nextpitch').addClass( "disabled" )
       }
       //Get next question to be asked
       TCG.LIL.currentQuestion = TCG.LIL.arrdiv[_getNextQuestion()];
